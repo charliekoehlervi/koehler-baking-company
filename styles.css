@@ -1,0 +1,355 @@
+@charset = "utf-8";
+
+body {
+	background-color: rgb(248, 249, 250);
+	background-image: url("images/background1.jpg");
+	background-repeat: repeat;
+	color: rgb(100, 100, 100);
+	font-family: 'Work Sans', sans-serif;
+	font-weight: bold;
+}
+
+.main {
+	background-image: url("images/cookies1.jpg");
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	padding-top: 100px;
+}
+
+.navbar {
+	position: fixed;
+	z-index: 999;
+	width: 100%;
+	background-color: rgba(248, 249, 250, 70%);
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: rgb(100, 100, 100);
+    font-size: 1.2em;
+}
+
+body a {
+	text-decoration: none;
+	transition: 1s color;
+}
+
+body a:hover {
+	text-decoration: none;
+	color: black;
+}
+
+.main h1, h2 {
+	color: white;
+}
+
+h4 {
+	font-weight: bold;
+}
+
+#aboutImg, #factsImg, #orderImg {
+	position: relative;
+	left: 10px;
+	bottom: 5px;
+}
+
+#totalDiv button {
+	background-color: rgb(248, 249, 250);
+	border-color: rgba(0, 0, 0, 46%);
+	color: rgb(100, 100, 100);
+	min-height: 40px;
+	width: 100px;
+	border-radius: 30px;
+	transition: 1s color, 1s border-color, 1s background-color;
+}
+
+#totalDiv button:hover {
+	color: black;
+	border-color: black;
+	background-color: rgb(240, 241, 242);
+	cursor: pointer;
+}
+
+#totalDiv button:focus {
+	outline: none;
+}
+
+footer a {
+	color: rgb(100, 100, 100);
+}
+
+footer {
+	background-color: rgba(249, 244, 240, 40%);
+	text-align: center;
+	padding: 12px;
+}
+
+/* Mobile Styling: 0px to 480px */
+@media only screen and (max-width: 480px) {
+	.main {
+		height: 550px;
+	}
+
+	.main h1 {
+		font-size: 3.0em;
+	}
+
+	.main h2 {
+		font-size: 1.6em;
+	}
+
+	#aboutus {
+		padding-top: 60px;
+	}
+
+	#aboutus h1 {
+		text-align: center;
+	}
+
+	#aboutus p {
+		padding-top: 10px;
+	}
+
+	#abImg {
+		padding-top: 40px;
+		position: relative;
+		width: 50%;
+		margin-left: 25%;
+		margin-right: 25%;
+		padding-bottom: 40px;
+	}
+
+	#facts {
+		padding-top: 60px;
+		padding-bottom: 40px;
+	}
+
+	#facts h1 {
+		text-align: center;
+	}
+
+	#rgwImg {
+		padding-top: 40px;
+		position: relative;
+		width: 50%;
+		margin-left: 25%;
+		margin-right: 25%;
+	}
+
+	#facts figcaption {
+		text-align: center;
+		font-size: 0.7em;
+	}
+
+	#facts h4 {
+		padding-top: 40px;
+	}
+
+	#facts p {
+		padding-top: 10px;
+	}
+
+	#order {
+		padding-top: 60px;
+	}
+
+	#order h1 {
+		text-align: center;
+	}
+
+	#order p {
+		text-align: center;
+		padding-top: 10px;
+	}
+
+	.products {
+		text-align: center;
+		padding-top: 20px;
+		padding-bottom: 20px;
+	}
+
+	#totalDiv button {
+		position: relative;
+		width: 36%;
+		margin-left: 32%;
+		margin-right: 32%;
+	}
+
+
+
+	#totalDiv h5 {
+		text-align: center;
+		padding-top: 10px;
+	}
+}
+
+/* Tablet Styling: 481px to 767px*/
+@media only screen and (min-width: 481px) {
+
+	.main {
+		height: 600px;
+	}
+
+	.main h1 {
+		font-size: 3.5em;
+	}
+
+	.main h2 {
+		font-size: 2.0em;
+	}
+
+	#aboutus {
+		padding-top: 60px;
+	}
+
+	#aboutus p {
+		padding-top: 10px;
+	}
+
+	#abImg {
+		padding-top: 40px;
+		position: relative;
+		width: 50%;
+		margin-left: 25%;
+		margin-right: 25%;
+		padding-bottom: 40px;
+	}
+
+	#facts {
+		padding-top: 60px;
+		padding-bottom: 40px;
+	}
+
+	#facts h1 {
+		text-align: center;
+	}
+
+	#rgwImg {
+		padding-top: 40px;
+		position: relative;
+		width: 50%;
+		margin-left: 25%;
+		margin-right: 25%;		
+	}
+
+	#facts figcaption {
+		text-align: center;
+	}
+
+	#facts h4 {
+		padding-top: 40px;
+	}
+
+	#facts p {
+		padding-top: 10px;
+	}
+
+	#order {
+		padding-top: 60px;
+	}
+
+	#order h1 {
+		text-align: center;
+	}
+
+	#order p {
+		text-align: center;
+		padding-top: 10px;
+		padding-bottom: 20px;
+	}
+
+	.products {
+		text-align: center;
+		width: 33%;
+		padding-bottom: 30px;
+	}
+
+	.products img {
+		width: 100%;
+	}
+
+	label {
+		font-size: 0.68em;
+	}
+
+	#totalDiv button {
+		position: relative;
+		width: 30%;
+		margin-left: 35%;
+		margin-right: 35%;
+	}
+
+	#totalDiv h5 {
+		text-align: center;
+		padding-top: 10px;
+	}
+}
+
+/* Desktop Styling: Greater than 768px*/
+@media only screen and (min-width: 768px) {
+
+	.main {
+		height: 650px;
+	}
+
+	#aboutus h1 {
+		padding-top: 60px;
+	}
+
+	#aboutus .col-lg-8 {
+		width: 65%;
+	}
+
+	#abImg {
+		position: relative;
+		width: 100%;
+		top: 20%;
+		padding-top: 0px;
+		padding-left: 30px;
+		margin-left: auto;
+		margin-right: auto;
+		padding-bottom: 0px;
+	}
+
+	#facts h1 {
+		position: relative;
+		padding-top: 60px;
+		left: 120%;
+		text-align: left;
+		width: 300px;
+	}
+
+	#facts figcaption {
+		font-size: 0.75em;
+	}
+
+	#facts .col-lg-8 {
+		padding-top: 120px;
+		width: 65%;
+	}
+
+	#order p {
+		padding-top: 20px;
+	}
+
+	.products img {
+		padding-top: 20px;
+	}
+
+	label {
+		font-size: 1.0em;
+	}
+
+	#totalDiv button {
+		position: relative;
+		top: 20%;
+		width: 30%;
+		margin-left: 35%;
+		margin-right: 35%;
+	}
+
+	#totalDiv h5 {
+		text-align: center;
+		padding-top: 20px;
+	}
+}
